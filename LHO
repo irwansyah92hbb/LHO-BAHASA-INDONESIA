@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laporan Hasil Observasi — Lidah Buaya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#1E3324;
+    --forest-deep:#152418;
+    --sage:#6E8F5C;
+    --sage-light:#CEDBB8;
+    --paper:#F4F1E6;
+    --gel:#DCE8DC;
+    --gold:#D9A441;
+    --clay:#B5652E;
+    --ink:#22301F;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Work Sans',sans-serif;
+    line-height:1.5;
+  }
+  .sheet{max-width:760px;margin:0 auto;background:var(--paper);}
+  h1,h2,h3{font-family:'Fraunces',serif;margin:0;}
+  .hero{
+    background:var(--forest);
+    color:var(--paper);
+    padding:56px 40px 64px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero .kicker{
+    color:var(--gold);
+    font-size:14px;
+    letter-spacing:.02em;
+    margin-bottom:10px;
+  }
+  .hero h1{font-size:42px;font-weight:600;max-width:480px;line-height:1.08;}
+  .hero p.sub{max-width:420px;margin-top:14px;color:var(--sage-light);font-size:15px;}
+  .leaf{position:absolute;right:-40px;top:-20px;width:260px;height:340px;opacity:.9;}
+  .meta-row{
+    display:flex;gap:24px;margin-top:34px;flex-wrap:wrap;
+  }
+  .meta-item{font-size:13px;color:var(--sage-light);border-left:2px solid var(--gold);padding-left:10px;}
+  .meta-item b{display:block;color:var(--paper);font-size:15px;font-family:'Fraunces',serif;}
+
+  section{padding:40px;border-bottom:1px solid #E2DCC8;}
+  .eyebrow{color:var(--sage);font-weight:600;font-size:13px;margin-bottom:8px;}
+  h2{font-size:26px;color:var(--forest);margin-bottom:14px;}
+  p{font-size:15px;max-width:64ch;}
+
+  .klas-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:0;
+    border:1px solid var(--sage);border-radius:4px;overflow:hidden;margin-top:18px;
+  }
+  .klas-cell{padding:14px 18px;border-bottom:1px solid var(--sage-light);border-right:1px solid var(--sage-light);}
+  .klas-cell:nth-child(2n){border-right:none;}
+  .klas-cell .k{font-size:12px;color:var(--sage);}
+  .klas-cell .v{font-family:'Fraunces',serif;font-size:16px;font-style:italic;color:var(--forest);}
+
+  .bagian-list{display:flex;flex-direction:column;gap:18px;margin-top:20px;}
+  .bagian{
+    display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:start;
+    border-left:3px solid var(--sage);padding-left:16px;
+  }
+  .bagian .nama{font-family:'Fraunces',serif;font-size:18px;color:var(--clay);}
+  .bagian p{font-size:14px;margin:4px 0 0;}
+
+  .manfaat-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px;}
+  .manfaat-card{
+    background:var(--gel);
+    border-radius:6px;
+    padding:16px 18px;
+  }
+  .manfaat-card .icon{font-size:20px;}
+  .manfaat-card h3{font-size:15px;margin:8px 0 4px;color:var(--forest);}
+  .manfaat-card p{font-size:13px;margin:0;}
+
+  .bahasa-box{
+    background:var(--forest-deep);color:var(--paper);border-radius:6px;padding:22px 24px;margin-top:18px;
+  }
+  .bahasa-box h3{color:var(--gold);font-size:15px;font-family:'Work Sans',sans-serif;font-weight:600;margin-bottom:10px;}
+  .bahasa-row{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-top:1px solid rgba(244,241,230,.15);font-size:13.5px;}
+  .bahasa-row:first-of-type{border-top:none;}
+  .bahasa-row .contoh{color:var(--sage-light);text-align:right;max-width:60%;font-style:italic;}
+
+  .simpulan{
+    background:var(--sage);color:var(--forest-deep);padding:40px;
+  }
+  .simpulan .eyebrow{color:var(--forest-deep);opacity:.7;}
+  .simpulan h2{color:var(--forest-deep);}
+  .simpulan p{font-size:16px;color:var(--forest-deep);}
+
+  footer{padding:22px 40px;font-size:12px;color:var(--sage);display:flex;justify-content:space-between;}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="hero">
+    <svg class="leaf" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 20 C40 60 10 140 40 240 C60 200 70 160 75 120 C110 150 130 190 130 240 C170 150 180 60 100 20Z" fill="#3F5B33"/>
+      <path d="M100 40 C60 75 40 140 60 220" stroke="#6E8F5C" stroke-width="3" fill="none" opacity=".6"/>
+    </svg>
+    <div class="kicker">Teks Laporan Hasil Observasi · Bahasa Indonesia Kelas X</div>
+    <h1>Lidah Buaya, Tanaman Sejuta Manfaat</h1>
+    <p class="sub">Ringkasan visual observasi terhadap tanaman Aloe vera — dari klasifikasi ilmiah hingga manfaatnya bagi kehidupan sehari-hari.</p>
+    <div class="meta-row">
+      <div class="meta-item"><b>Aloe vera</b>Nama ilmiah</div>
+      <div class="meta-item"><b>Asphodelaceae</b>Famili</div>
+      <div class="meta-item"><b>Sukulen</b>Jenis tanaman</div>
+      <div class="meta-item"><b>Tropis & Subtropis</b>Habitat</div>
+    </div>
+  </div>
+
+  <section>
+    <div class="eyebrow">Definisi Umum</div>
+    <h2>Apa itu lidah buaya?</h2>
+    <p>Lidah buaya (<i>Aloe vera</i>) merupakan tanaman sukulen berdaun tebal yang menyimpan cadangan air dalam jaringan daunnya. Tanaman ini berasal dari Semenanjung Arab, tetapi kini tersebar luas dan dibudidayakan di berbagai wilayah tropis, termasuk Indonesia, karena kemampuannya bertahan pada kondisi kering.</p>
+
+    <div class="klas-grid">
+      <div class="klas-cell"><div class="k">Kingdom</div><div class="v">Plantae</div></div>
+      <div class="klas-cell"><div class="k">Ordo</div><div class="v">Asparagales</div></div>
+      <div class="klas-cell"><div class="k">Famili</div><div class="v">Asphodelaceae</div></div>
+      <div class="klas-cell"><div class="k">Genus</div><div class="v">Aloe</div></div>
+      <div class="klas-cell"><div class="k">Spesies</div><div class="v">Aloe vera</div></div>
+      <div class="klas-cell"><div class="k">Umur tanaman</div><div class="v">Tahunan (perenial)</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Deskripsi Bagian</div>
+    <h2>Struktur tanaman</h2>
+    <div class="bagian-list">
+      <div class="bagian">
+        <div class="nama">Daun</div>
+        <p>Tebal, berdaging, berbentuk pedang dengan tepi bergerigi lunak. Warna hijau keabu-abuan dengan bercak putih pada tanaman muda, berisi gel bening di bagian dalam.</p>
+      </div>
+      <div class="bagian">
+        <div class="nama">Batang</div>
+        <p>Pendek dan hampir tidak terlihat karena tertutup rapat oleh susunan daun yang tumbuh roset di sekelilingnya.</p>
+      </div>
+      <div class="bagian">
+        <div class="nama">Akar</div>
+        <p>Berupa akar serabut yang dangkal, menyebar di permukaan tanah untuk menyerap air secara cepat saat hujan turun.</p>
+      </div>
+      <div class="bagian">
+        <div class="nama">Bunga</div>
+        <p>Tumbuh pada tangkai panjang menjulang dari tengah roset daun, berbentuk tabung dengan warna kuning hingga jingga.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Deskripsi Manfaat</div>
+    <h2>Mengapa lidah buaya penting?</h2>
+    <div class="manfaat-grid">
+      <div class="manfaat-card">
+        <div class="icon">🩹</div>
+        <h3>Kesehatan</h3>
+        <p>Gel di dalam daun dapat membantu meredakan luka bakar ringan dan iritasi kulit.</p>
+      </div>
+      <div class="manfaat-card">
+        <div class="icon">💧</div>
+        <h3>Kecantikan</h3>
+        <p>Digunakan sebagai bahan pelembap alami untuk kulit dan perawatan rambut.</p>
+      </div>
+      <div class="manfaat-card">
+        <div class="icon">🥤</div>
+        <h3>Kuliner</h3>
+        <p>Diolah menjadi minuman dan koktail segar karena teksturnya yang kenyal.</p>
+      </div>
+      <div class="manfaat-card">
+        <div class="icon">🌱</div>
+        <h3>Lingkungan</h3>
+        <p>Mudah dibudidayakan, tahan kekeringan, cocok sebagai tanaman hias minim perawatan.</p>
+      </div>
+    </div>
+
+    <div class="bahasa-box">
+      <h3>Ciri Kebahasaan Teks</h3>
+      <div class="bahasa-row"><span>Kalimat definisi</span><span class="contoh">"Lidah buaya merupakan tanaman sukulen..."</span></div>
+      <div class="bahasa-row"><span>Kata kerja penghubung</span><span class="contoh">adalah, merupakan, yaitu, termasuk</span></div>
+      <div class="bahasa-row"><span>Frasa nomina teknis</span><span class="contoh">jaringan daun, akar serabut, tangkai bunga</span></div>
+      <div class="bahasa-row"><span>Kalimat kompleks</span><span class="contoh">"...karena kemampuannya bertahan pada kondisi kering."</span></div>
+    </div>
+  </section>
+
+  <div class="simpulan">
+    <div class="eyebrow">Simpulan</div>
+    <h2>Tanaman kecil, manfaat besar</h2>
+    <p>Lidah buaya adalah contoh tanaman multifungsi: mudah tumbuh, tahan terhadap kekeringan, sekaligus bermanfaat luas di bidang kesehatan, kecantikan, dan kuliner. Sifat-sifat ini menjadikannya objek observasi yang kaya untuk dipelajari sekaligus mudah ditemukan di lingkungan sekitar.</p>
+  </div>
+
+  <footer>
+    <span>Laporan Hasil Observasi — Bahasa Indonesia Kelas X</span>
+    <span>Sumber: hasil observasi & studi pustaka</span>
+  </footer>
+</div>
+</body>
+</html>
